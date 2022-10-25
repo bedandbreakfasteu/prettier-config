@@ -2,9 +2,13 @@
 
 The Prettier configuration for Bedandbreakfast.eu.
 
-##Usage
+## Usage
 
-1. Make sure `@bedandbreakfasteu/prettier-config` is available in your project.
+1. Install the package:
+
+    ```bash
+    yarn add --dev @bedandbreakfasteu/prettier-config@bedandbreakfasteu/prettier-config#1.0.2
+    ```
 
 2. Add the following to your `package.json`:
 
@@ -14,13 +18,7 @@ The Prettier configuration for Bedandbreakfast.eu.
     }
     ```
 
-    If you don't want to use `package.json`, use a `.prettierrc.json` that exports a string:
-
-    ```json
-    "@bedandbreakfasteu/prettier-config"
-    ```
-
-    Or if you need to extend this config use a `.prettierrc.js`:
+    Or use a `.prettierrc.js` if you need to extend it:
 
     ```js
     module.exports = {
@@ -28,5 +26,3 @@ The Prettier configuration for Bedandbreakfast.eu.
         semi: false,
     };
     ```
-
-3. Install the prettier plugin in your IDE and enable `format on save` for auto formatting.
